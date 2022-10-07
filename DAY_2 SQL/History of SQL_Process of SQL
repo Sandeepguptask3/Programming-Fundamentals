@@ -1,0 +1,19 @@
+#  Q.History of SQL
+ ANS-A Relational Model of Data for Large Shared Data Banks" was a paper which was published by the great computer scientist "E.F. Codd" in 1970.
+     The IBM researchers Raymond Boyce and Donald Chamberlin originally developed the SEQUEL (Structured English Query Language) after learning 
+     from the paper given by E.F. Codd. They both developed the SQL at the San Jose Research laboratory of IBM Corporation in 1970.
+     At the end of the 1970s, relational software Inc. developed their own first SQL using the concepts of E.F. Codd, 
+     Raymond Boyce, and Donald Chamberlin. This SQL was totally based on RDBMS. Relational Software Inc., which is now known as Oracle Corporation,
+     introduced the Oracle V2 in June 1979, which is the first implementation of SQL language. This Oracle V2 version operates on VAX computers.
+     
+     
+ # Q.Process of SQL
+     When we are executing the command of SQL on any Relational database management system, then the system automatically 
+     finds the best routine to carry out our request, and the SQL engine determines how to interpret that particular command.
+
+     Structured Query Language contains the following four components in its process:
+
+     1. Query Dispatcher
+     2.Optimization Engines
+     3.Classic Query Engine
+     4.SQL Query Engine, etc.
