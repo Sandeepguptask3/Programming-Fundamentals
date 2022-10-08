@@ -1,0 +1,24 @@
+# Some SQL Commands
+  The SQL commands help in creating and managing the database. The most common SQL commands which are highly used are mentioned below:
+
+1.CREATE command
+2.UPDATE command
+3.DELETE command
+4.SELECT command
+5.DROP command
+6.INSERT command
+
+
+1.CREATE Command
+  This command helps in creating the new database, new table, table view, and other objects of the database.
+2.UPDATE Command
+  This command helps in updating or changing the stored data in the database.
+3.DELETE Command
+  This command helps in removing or erasing the saved records from the database tables. It erases single or multiple tuples from the tables of the database.
+4.SELECT Command
+  This command helps in accessing the single or multiple rows from one or multiple tables of the database. We can also use this command with the WHERE clause.
+5.DROP Command
+  This command helps in deleting the entire table, table view, and other objects from the database.
+
+6.INSERT Command
+  This command helps in inserting the data or records into the database tables. We can easily insert the records in single as well as multiple rows of the table.
