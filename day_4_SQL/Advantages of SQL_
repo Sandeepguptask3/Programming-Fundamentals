@@ -1,0 +1,27 @@
+# Advantages of SQL
+  SQL provides various advantages which make it more popular in the field of data science.
+  It is a perfect query language which allows data professionals and users to communicate with the database. 
+  Following are the best advantages or benefits of Structured Query Language:
+
+1. No programming needed
+   SQL does not require a large number of coding lines for managing the database systems.
+   We can easily access and maintain the database by using simple SQL syntactical rules. 
+   These simple rules make the SQL user-friendly.
+
+2. High-Speed Query Processing
+   A large amount of data is accessed quickly and efficiently from the database by using SQL queries. 
+   Insertion, deletion, and updation operations on data are also performed in less time.
+
+3. Standardized Language
+   SQL follows the long-established standards of ISO and ANSI, which offer a uniform platform across the globe to all its users.
+
+4. Portability
+   The structured query language can be easily used in desktop computers, laptops, tablets, and even smartphones.
+   It can also be used with other applications according to the user's requirements.
+
+5. Interactive language
+    We can easily learn and understand the SQL language. We can also use this language for communicating with the database because
+    it is a simple query language. This language is also used for receiving the answers to complex queries in a few seconds.
+
+6. More than one Data View
+   The SQL language also helps in making the multiple views of the database structure for the different database users.
