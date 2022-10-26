@@ -1,0 +1,25 @@
+# Disadvantages of SQL
+ With the advantages of SQL, it also has some disadvantages, which are as follows:
+
+1. Cost
+   The operation cost of some SQL versions is high. That's why some programmers cannot use the Structured Query Language.
+
+2. Interface is Complex
+   Another big disadvantage is that the interface of Structured query language is difficult, which makes it difficult for SQL users to use and manage it.
+
+3. Partial Database control
+   The business rules are hidden. So, the data professionals and users who are using this query language cannot have full database con
+   
+# SQL Syntax
+  When you want to do some operations on the data in the database, then you must have to write the query in the predefined syntax of SQL.
+
+  The syntax of the structured query language is a unique set of rules and guidelines, which is not case-sensitive.
+  Its Syntax is defined and maintained by the ISO and ANSI standards.
+
+  Following are some most important points about the SQL syntax which are to remember:
+
+ a> You can write the keywords of SQL in both uppercase and lowercase, but writing the SQL keywords in uppercase improves the readability of the SQL query.
+ b> SQL statements or syntax are dependent on text lines. We can place a single SQL statement on one or multiple text lines.
+ c> You can perform most of the action in a database with SQL statements.
+ d> SQL syntax depends on relational algebra and tuple relational calculus.
+
