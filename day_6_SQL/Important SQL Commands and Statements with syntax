@@ -1,0 +1,159 @@
+/*
+
+# SQL Statement
+  SQL statements tell the database what operation you want to perform on the structured data 
+  and what information you would like to access from the database.The statements of SQL are very simple and easy to use and understand. They are like plain English but with a particular syntax.
+
+# Simple Example of SQL statement:
+
+   SELECT "column_name" FROM "table_name";    
+   
+   Each SQL statement begins with any of the SQL keywords and ends with the semicolon (;). 
+   The semicolon is used in the SQL for separating the multiple Sql statements which are going to execute in the same call. 
+   In this SQL tutorial, we will use the semicolon (;) at the end of each SQL query or statement.
+
+# Most Important SQL Commands and Statements
+Select Statement
+Update Statement
+Delete Statement
+Create Table Statement
+Alter Table Statement
+Drop Table Statement
+Create Database Statement
+Drop Database Statement
+Insert Into Statement
+Truncate Table Statement
+Describe Statement
+Distinct Clause
+Commit Statement
+Rollback Statement
+Create Index Statement
+Drop Index Statement
+Use Statement
+
+
+Let's discuss each statement in short one by one with syntax and one example:
+
+
+
+1. SELECT Statement
+This SQL statement reads the data from the SQL database and shows it as the output to the database user.
+
+Syntax of SELECT Statement:
+
+SELECT column_name1, column_name2, .…, column_nameN  
+    [ FROM table_name ]  
+    [ WHERE condition ]  
+    [ ORDER BY order_column_name1 [ ASC | DESC ], .... ];  
+Example of SELECT Statement:
+
+SELECT Emp_ID, First_Name, Last_Name, Salary, City  
+FROM Employee_details  
+WHERE Salary = 100000  
+ORDER BY Last_Name  
+This example shows the Emp_ID, First_Name, Last_Name, Salary, and City of those employees from the Employee_details table whose Salary is 100000. The output shows all the specified details according to the ascending alphabetical order of Last_Name.
+
+
+2. UPDATE Statement
+This SQL statement changes or modifies the stored data in the SQL database.
+
+Syntax of UPDATE Statement:
+
+UPDATE table_name  
+SET column_name1 = new_value_1, column_name2 = new_value_2, ...., column_nameN = new_value_N  
+[ WHERE  CONDITION ];  
+Example of UPDATE Statement:
+
+UPDATE Employee_details  
+SET Salary = 100000  
+WHERE Emp_ID = 10;  
+This example changes the Salary of those employees of the Employee_details table whose Emp_ID is 10 in the table.
+
+
+
+
+3. DELETE Statement
+This SQL statement deletes the stored data from the SQL database.
+Syntax of DELETE Statement:
+
+DELETE FROM table_name  
+[ WHERE CONDITION ];  
+Example of DELETE Statement:
+
+DELETE FROM Employee_details  
+WHERE First_Name = 'Sumit';  
+This example deletes the record of those employees from the Employee_details table whose First_Name is Sumit in the table.
+
+
+4. CREATE TABLE Statement
+This SQL statement creates the new table in the SQL database.
+
+Syntax of CREATE TABLE Statement:
+
+CREATE TABLE table_name  
+(  
+column_name1 data_type [column1 constraint(s)],  
+column_name2 data_type [column2 constraint(s)],  
+.....  
+.....,  
+column_nameN data_type [columnN constraint(s)],  
+PRIMARY KEY(one or more col)  
+);  
+Example of CREATE TABLE Statement:
+
+CREATE TABLE Employee_details(  
+      Emp_Id NUMBER(4) NOT NULL,  
+      First_name VARCHAR(30),  
+      Last_name VARCHAR(30),  
+      Salary Money,  
+      City VARCHAR(30),  
+      PRIMARY KEY (Emp_Id)  
+);  
+This example creates the table Employee_details with five columns or fields in the SQL database. 
+The fields in the table are Emp_Id, First_Name, Last_Name, Salary, and City. The Emp_Id column in the 
+table acts as a primary key, which means that the Emp_Id column cannot contain duplicate values and null values.
+
+
+
+
+
+5. ALTER TABLE Statement
+This SQL statement adds, deletes, and modifies the columns of the table in the SQL database.
+
+Syntax of ALTER TABLE Statement:
+
+ALTER TABLE table_name ADD column_name datatype[(size)];  
+The above SQL alter statement adds the column with its datatype in the existing database table.
+
+ALTER TABLE table_name MODIFY column_name column_datatype[(size)];  
+The above 'SQL alter statement' renames the old column name to the new column name of the existing database table.
+
+ALTER TABLE table_name DROP COLUMN column_name;  
+The above SQL alter statement deletes the column of the existing database table.
+
+
+Example of ALTER TABLE Statement:
+
+ALTER TABLE Employee_details   
+ADD Designation VARCHAR(18);  
+This example adds the new field whose name is Designation with size 18 in the Employee_details table of the SQL database.
+
+
+
+
+6. DROP TABLE Statement
+This SQL statement deletes or removes the table and the structure, views, permissions, and triggers associated with that table.
+
+Syntax of DROP TABLE Statement:
+
+DROP TABLE [ IF EXISTS ]  
+table_name1, table_name2, ……, table_nameN;  
+The above syntax of the drop statement deletes specified tables completely if they exist in the database.
+
+Example of DROP TABLE Statement:
+
+DROP TABLE Employee_details;   
+This example drops the Employee_details table if it exists in the SQL database. This removes the complete information if available in the table.
+
+  
+*/  
