@@ -1,0 +1,206 @@
+/*
+
+7. CREATE DATABASE Statement
+This SQL statement creates the new database in the database management system.
+
+Syntax of CREATE DATABASE Statement:
+
+CREATE DATABASE database_name;  
+Example of CREATE DATABASE Statement:
+
+CREATE DATABASE Company;   
+The above example creates the company database in the system.
+
+
+
+
+
+8. DROP DATABASE Statement
+This SQL statement deletes the existing database with all the data tables and views from the database management system.
+
+Syntax of DROP DATABASE Statement:
+
+DROP DATABASE database_name;  
+Example of DROP DATABASE Statement:
+
+DROP DATABASE Company;   
+The above example deletes the company database from the system.
+
+
+
+
+
+
+
+9. INSERT INTO Statement
+This SQL statement inserts the data or records in the existing table of the SQL database. This statement can easily insert single and multiple records in a single query statement.
+
+Syntax of insert a single record:
+
+INSERT INTO table_name  
+(   
+column_name1,   
+column_name2, .…,   
+column_nameN  
+)  
+VALUES   
+(value_1,   
+value_2, ..…,   
+value_N  
+);  
+Example of insert a single record:
+
+INSERT INTO Employee_details  
+(   
+Emp_ID,   
+First_name,  
+Last_name,  
+Salary,  
+City  
+)  
+VALUES   
+(101,   
+Akhil,  
+Sharma,  
+40000,  
+Bangalore  
+);  
+This example inserts 101 in the first column, Akhil in the second column, Sharma in the third column, 40000 in the fourth column, and Bangalore in the last column of the table Employee_details.
+
+Syntax of inserting a multiple records in a single query:
+
+INSERT INTO table_name  
+( column_name1, column_name2, .…, column_nameN)  
+VALUES (value_1, value_2, ..…, value_N), (value_1, value_2, ..…, value_N),….;  
+Example of inserting multiple records in a single query:
+
+INSERT INTO Employee_details  
+( Emp_ID, First_name, Last_name, Salary, City )  
+VALUES (101, Amit, Gupta, 50000, Mumbai), (101,  John, Aggarwal, 45000, Calcutta), (101, Sidhu, Arora, 55000, Mumbai);  
+This example inserts the records of three employees in the Employee_details table in the single query statement.
+
+
+
+
+
+10. TRUNCATE TABLE Statement
+This SQL statement deletes all the stored records from the table of the SQL database.
+
+Syntax of TRUNCATE TABLE Statement:
+
+TRUNCATE TABLE table_name;  
+Example of TRUNCATE TABLE Statement:
+
+TRUNCATE TABLE Employee_details;  
+This example deletes the record of all employees from the Employee_details table of the database.
+
+
+
+
+11. DESCRIBE Statement
+This SQL statement tells something about the specified table or view in the query.
+
+Syntax of DESCRIBE Statement:
+
+DESCRIBE table_name | view_name;  
+Example of DESCRIBE Statement:
+
+DESCRIBE Employee_details;  
+This example explains the structure and other details about the Employee_details table.
+
+
+
+
+12. DISTINCT Clause
+This SQL statement shows the distinct values from the specified columns of the database table. This statement is used with the SELECT keyword.
+
+Syntax of DISTINCT Clause:
+
+SELECT DISTINCT column_name1, column_name2, ...  
+FROM table_name;  
+Example of DISTINCT Clause:
+
+SELECT DISTINCT City, Salary  
+FROM Employee_details;  
+This example shows the distinct values of the City and Salary column from the Employee_details table.
+
+
+
+
+
+13. COMMIT Statement
+This SQL statement saves the changes permanently, which are done in the transaction of the SQL database.
+
+Syntax of COMMIT Statement:
+
+COMMIT  
+Example of COMMIT Statement:
+
+DELETE FROM Employee_details  
+WHERE salary = 30000;  
+COMMIT;  
+This example deletes the records of those employees whose Salary is 30000 and then saves the changes permanently in the database.
+
+
+
+
+14. ROLLBACK Statement
+This SQL statement undo the transactions and operations which are not yet saved to the SQL database.
+
+Syntax of ROLLBACK Statement:
+
+ROLLBACK  
+Example of ROLLBACK Statement:
+
+DELETE FROM Employee_details  
+WHERE City = Mumbai;  
+ROLLBACK;  
+This example deletes the records of those employees whose City is Mumbai and then undo the changes in the database.
+
+
+
+
+
+15. CREATE INDEX Statement
+This SQL statement creates the new index in the SQL database table.
+
+Syntax of CREATE INDEX Statement:
+
+CREATE INDEX index_name  
+ON table_name ( column_name1, column_name2, …, column_nameN );  
+Example of CREATE INDEX Statement:
+
+CREATE INDEX idx_First_Name  
+ON employee_details (First_Name);  
+This example creates an index idx_First_Name on the First_Name column of the Employee_details table.
+
+
+
+
+
+16. DROP INDEX Statement
+This SQL statement deletes the existing index of the SQL database table.
+
+Syntax of DROP INDEX Statement:
+
+DROP INDEX index_name;   
+Example of DROP INDEX Statement:
+
+DROP INDEX idx_First_Name;   
+This example deletes the index idx_First_Name from the SQL database.
+
+
+
+
+17. USE Statement
+This SQL statement selects the existing SQL database. Before performing the operations on the database table, you have to select the database from the multiple existing databases.
+
+Syntax of USE Statement:
+
+USE database_name;  
+Example of USE DATABASE Statement:
+
+USE Company;   
+This example uses the company database.
+
+*/
